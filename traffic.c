@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+// Function for color the light;
 void red()
 {
     printf("\033[0;31m");
@@ -15,12 +16,14 @@ void green()
 {
     printf("\033[0;32m");
 }
+
+// driver code;
 int main(void)
 {
     int n1 = 1,n2 = 2,n3 = 3;
     int color;
     
-
+// Displaying the lights
 red();
 
 printf("_____________________\n");
@@ -58,6 +61,8 @@ printf("|___________________|\n");
     printf("|___________________|\n");
 
 
+// taking the inputs from user;
+    
 printf("\n\033[1;37m Traffic Light....\n\n");
     printf("(*) 1 for 'Red'\n");
     printf("(*) 2 for 'Yellow'\n");    
@@ -66,6 +71,8 @@ printf("\n\033[1;37m Traffic Light....\n\n");
     scanf("%d",&color);
     printf("\n\n");
 
+ // choice making...
+    
     if (color == n1)
     {
         red();
@@ -115,6 +122,6 @@ printf("|___________________|\n");
             printf("\033[0;34m");
         printf("[X] Error! something is Wrong!!...\n");
     }
-    
+    // code ends here 
     return 0;
 }
